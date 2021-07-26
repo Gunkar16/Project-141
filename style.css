@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@300&display=swap');
+body{
+    background-size:cover;
+}
+.header{
+    background-image: url("button.jpg") !important;
+    background-size: cover;
+    font-size:22px !important;
+    height: 100px !important;
+    width: 220px !important;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+}
+.header::after {
+     content: "Hand Pong";
+     font-family: 'Dancing Script', cursive;
+}
+.header:hover::after {
+    font-family: 'Dancing Script', cursive;
+    content:"View Instructions";
+    color: white;
+}
+.header:focus{
+    font-family: 'Dancing Script', cursive;
+    outline: none !important;
+    color: white !important;
+}
+
+
+
+svg#play {
+    margin: 30px;
+    width:80px;
+   display:block;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+  }
+  
+  svg#play #triangle {
+    fill:rgba(22,22,22,0);
+    transition:500ms;
+    transform-origin: 50% 50%;
+  }
+  svg#play:hover #triangle {
+    fill:#A3CD3A;
+    transform-origin: 50% 50%;
+  }
+  
+   svg #lineOne, svg #lineTwo {
+    transform-origin: 50% 50%;
+    transition: 1s;
+  } 
+  
+   svg:hover #lineOne {
+    transform: rotate(260deg);
+     -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+     transform-origin: 50% 50%;
+  } 
+  
+   svg:hover #lineTwo {
+    transform: rotate(-450deg);
+     transform-origin: 50% 50%;
+  } 
+
+#game_console{
+    background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink);
+	color: white;
+    width:600px;
+    border-radius: 10px;
+}
+.Instruction_img{
+  display:inline-block;
+  width:50%;
+  height: 180px;
+}
+
+.modal-body{
+  text-align: left;
+  font-size: 17px;
+}
+
+.modal-content{
+  margin-top:200px;
+  width:700px;
+  margin-left: -60px;
+}
+.copy_right_footer {
+  position: fixed;
+  color: #acb3b9;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  line-height: 3;
+  text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+canvas{
+  border:white solid 3px;
+  border-radius: 20px;
+}
+#restart{
+  background-image:url('restart.png');
+  width:90px;
+  height:90px;
+  background-color:#36454f;
+  border-radius: 50%;
+}
+#restart:hover{
+  border-top: gray !important;
+  border-width:2px !important;
+}
+.together{
+}
